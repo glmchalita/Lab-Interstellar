@@ -1,0 +1,108 @@
+@use "vars";
+
+.title {
+  font-size: 24px;
+  font-weight: 700;
+  text-align: center;
+  border-bottom: 2px solid vars.$white;
+  color: vars.$white;
+}
+
+.text {
+  font-size: 20px;
+  font-weight: 200;
+  color: vars.$white;
+
+  &:first-child {
+    margin-bottom: 24px;
+  }
+}
+
+.text--sm {
+  font-size: 16px;
+  color: vars.$white;
+  border-bottom: 2px solid vars.$white;
+  text-align: center;
+
+  &-gray {
+    color: #7b8c86;
+  }
+}
+
+.flex--logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex--title {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 32px;
+}
+
+.flex--content {
+  display: flex;
+  align-items: center;
+}
+
+.flex--list {
+  display: flex;
+  justify-content: space-around;
+  gap: 32px;
+  padding-top: 32px;
+
+  li {
+    padding: 26px;
+    text-align: center;
+    background-color: #060726;
+    border-radius: 9px;
+
+    img {
+      margin-bottom: 12px;
+      border-radius: 4px;
+    }
+  }
+}
+
+.container {
+  padding: 5.6vw;
+}
+
+.h-100 {
+  height: 100vh;
+}
+
+.w-100 {
+  width: 100vw;
+}
+
+.ml-50 {
+  margin-left: 50px;
+}
+
+.mr-32 {
+  margin-right: 32px;
+}
+
+.ease-4 {
+  transition: all 0.4s ease;
+}
+
+.scale {
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+
+.rocket {
+  position: fixed;
+  height: 150px;
+  right: 0;
+  transition: all 1s ease;
+}
+
+.hidden {
+  opacity: 0;
+  visibility: hidden;
+}
