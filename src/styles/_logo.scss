@@ -1,0 +1,29 @@
+.logo {
+  height: 100vh;
+  width: 100vw;
+  padding: 5.6vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @media (max-width: 640px) {
+    width: 100%;
+  }
+}
+
+.rocket {
+  position: fixed;
+  height: 150px;
+  right: 0;
+  transition: all 1s ease;
+  width: auto;
+
+  @media (max-width: 640px) {
+    height: 100px;
+  }
+}
+
+.hidden {
+  opacity: 0;
+  visibility: hidden;
+}
